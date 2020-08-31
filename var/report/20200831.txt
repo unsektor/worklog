@@ -1,0 +1,11 @@
+# 10.00
+
+10.00-12.00 - PP-1000 - development
+
+# 12.00-13.00 launch time
+
+13.00-14.00 - PP-1001 - discussion, time estimating
+14.00-16.00 - PP-1007 - (blocker issue) research, fix
+16.00-17.00 - PP-1008 - (higher priority issue) deployement
+17.00-18.30 - PP-1007 - testing, deployment, maintenance
+18.30-19.00 - PP-1001

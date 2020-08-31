@@ -1,0 +1,12 @@
+{
+  "dir": "../var/report",
+  "task": {
+    "alias": {
+      "LET": "PP-1000"
+    },
+    "description": {
+      "ADM-3": "TeamWox / Jira / Stash / Fisheye",
+      "PP-1000": "issue discussion"
+    }
+  }
+}
