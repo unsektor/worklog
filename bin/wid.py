@@ -140,7 +140,7 @@ class UserViewBuilder(ViewBuilderInterface):
 
                 view += ('{task:' + str(cell_width) + '} {time!s:8} {description!s}\n').format(
                     task=task.task,
-                    time=f'{math.ceil(delta.seconds / 3600):>2}h ' + str(math.ceil((delta.seconds % 3600) / 60)) + 'm',
+                    time=f'{math.floor(delta.seconds / 3600):>2}h ' + str(math.ceil((delta.seconds % 3600) / 60)) + 'm',
                     description=', '.join(sorted(task.description)),
                 )
 
@@ -262,7 +262,7 @@ if __name__ == '__main__':
     if debug_mode == Debug.VERY_VERY_VERBOSE:
         print('vvv:', 'date list to process', date_list)
 
-    absolute_bin_dir = os.path.dirname(os.path.abspath(__file__))
+    absolute_bin_dir = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
     with open(absolute_bin_dir + '/../etc/wid.json') as fp:
         config = json.load(fp=fp)
 
